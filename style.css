@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Great+Vibes&family=Playfair+Display:ital@1&display=swap');
 
 body {
   margin: 0;
@@ -192,6 +193,19 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
+.love-bg span:nth-child(2),
+.love-bg span:nth-child(5) {
+  font-family: 'Dancing Script', cursive;
+  font-size: 28px;
+}
+
+.love-bg span:nth-child(3) {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 26px;
+}
+
+
 
 
 
