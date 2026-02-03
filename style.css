@@ -133,6 +133,67 @@ button:hover {
 .photo:hover::after {
   opacity: 1;
 }
+/* Romantic Gallery Container */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 25px;
+}
+
+/* Image Card */
+.gallery img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 22px;
+  position: relative;
+  box-shadow: 0 12px 25px rgba(214, 51, 108, 0.35);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Hover love effect */
+.gallery img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 20px 45px rgba(214, 51, 108, 0.6);
+}
+
+/* Heart overlay */
+.gallery img::after {
+  content: "❤️";
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  font-size: 22px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show heart on hover */
+.gallery img:hover::after {
+  opacity: 1;
+}
+
+/* Soft glowing border */
+.gallery img {
+  outline: 2px solid rgba(255, 77, 109, 0.3);
+  outline-offset: -6px;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 
 
 
