@@ -103,3 +103,18 @@ button:hover {
     opacity: 0;
   }
 }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 220px;        /* SAME height for all images */
+  object-fit: cover;   /* Crop nicely without distortion */
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
