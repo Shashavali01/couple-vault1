@@ -205,6 +205,39 @@ button:hover {
   font-size: 26px;
 }
 
+/* Love sentences background */
+.love-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.love-bg span {
+  position: absolute;
+  font-family: 'Great Vibes', cursive;
+  font-size: 32px;
+  color: rgba(214, 51, 108, 0.35); /* STRONGER visibility */
+  white-space: nowrap;
+  animation: floatText 18s ease-in-out infinite;
+}
+
+/* Positioning */
+.love-bg span:nth-child(1) { top: 15%; left: 5%; }
+.love-bg span:nth-child(2) { top: 30%; left: 60%; }
+.love-bg span:nth-child(3) { top: 50%; left: 10%; }
+.love-bg span:nth-child(4) { top: 65%; left: 55%; }
+.love-bg span:nth-child(5) { top: 80%; left: 20%; }
+.love-bg span:nth-child(6) { top: 90%; left: 65%; }
+
+@keyframes floatText {
+  0% { opacity: 0; transform: translateY(20px); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-40px); }
+}
+
 
 
 
