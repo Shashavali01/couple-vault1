@@ -261,6 +261,31 @@ button:hover {
   font-size: 22px;
   color: #b03060;
 }
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99;
+}
+
+.modal img {
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+  margin: 5% auto;
+  border-radius: 20px;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
 
 
 
