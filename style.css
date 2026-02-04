@@ -243,6 +243,26 @@ button:hover {
   color: #d6336c;
   font-family: 'Dancing Script', cursive;
 }
+.love-note {
+  margin-top: 30px;
+  padding: 20px;
+  background: rgba(255, 240, 245, 0.8);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(214, 51, 108, 0.25);
+}
+
+.love-note h3 {
+  font-family: 'Playfair Display', serif;
+  color: #d6336c;
+}
+
+.love-note p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 22px;
+  color: #b03060;
+}
+
+
 
 
 
