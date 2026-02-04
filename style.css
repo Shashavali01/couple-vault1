@@ -237,6 +237,13 @@ button:hover {
   80% { opacity: 1; }
   100% { opacity: 0; transform: translateY(-40px); }
 }
+.caption {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #d6336c;
+  font-family: 'Dancing Script', cursive;
+}
+
 
 
 
