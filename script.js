@@ -32,4 +32,18 @@ if (gallery) {
     gallery.appendChild(wrapper);
   }
 }
+const modal = document.getElementById("modal");
+const modalImg = document.getElementById("modal-img");
+
+gallery.addEventListener("click", e => {
+  if (e.target.tagName === "IMG") {
+    modal.style.display = "block";
+    modalImg.src = e.target.src;
+  }
+});
+
+document.querySelector(".close").onclick = () => {
+  modal.style.display = "none";
+};
+
 
