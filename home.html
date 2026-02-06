@@ -1,53 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Our Memories</title>
+  <meta charset="UTF-8">
+  <title>Our Memories ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
 
-<div class="card">
-    <div class="hearts">
-
-  <h2>💑 Our Memories</h2>
-  <p class="subtitle">Every moment with you is special</p>
-
-  <div class="gallery" id="gallery">
-   <div class="photo"><img src="photos/pic1.jpeg"></div>
-  <div class="photo"><img src="photos/pic2.jpeg"></div>
-  <div class="photo"><img src="photos/pic3.jpeg"></div>
-  <div class="photo"><img src="photos/pic4.jpeg"></div>
-  <div class="photo"><img src="photos/pic5.jpeg"></div>
-  <div class="photo"><img src="photos/pic6.jpeg"></div>
-    <div class="photo"><img src="photos/pic7.jpeg"></div>
-    <div class="photo"><img src="photos/pic8.jpeg"></div>
-    <div class="photo"><img src="photos/pic9.jpeg"></div>
-    <div class="photo"><img src="photos/pic10.jpeg"></div>
-    <div class="photo"><img src="photos/pic11.jpeg"></div>
-    <div class="photo"><img src="photos/pic12.jpeg"></div>
-    <div class="photo"><img src="photos/pic13.jpeg"></div>
-    <div class="photo"><img src="photos/pic14.jpeg"></div>
-     <div class="photo"><img src="photos/pic15.jpeg"></div>
-     <div class="photo"><img src="photos/pic16.jpeg"></div>
-     <div class="photo"><img src="photos/pic18.jpeg"></div>
-     <div class="photo"><img src="photos/pic19.jpeg"></div>
-     <div class="photo"><img src="photos/pic20.jpeg"></div>
-     <div class="photo"><img src="photos/pic21.jpeg"></div>
-     <div class="photo"><img src="photos/pic22.jpeg"></div>
-     <div class="photo"><img src="photos/pic23.jpeg"></div>
-     <div class="photo"><img src="photos/pic24.jpeg"></div>
-     <div class="photo"><img src="photos/pic25.jpeg"></div>
-     <div class="photo"><img src="photos/pic26.jpeg"></div>
-    <div class="photo"><img src="photos/pic27.jpeg"></div>
-    <div class="photo"><img src="photos/pic28.jpeg"></div>
-    
-    
-    
-  </div>
-      <div class="love-bg">
+<!-- Background Love Sentences -->
+<div class="love-bg">
   <span>Forever with you ❤️</span>
   <span>You are my everything 💕</span>
   <span>Love grows every day 💖</span>
@@ -56,21 +17,32 @@
   <span>My heart is yours 💗</span>
 </div>
 
-<div id="modal" class="modal">
-  <span class="close">&times;</span>
-  <img id="modal-img">
-</div>
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="card">
+  <div class="hearts"></div>
+
+  <h2>💑 Our Memories</h2>
+  <p class="subtitle">Every moment with you is special</p>
+
+  <!-- Gallery -->
+  <div class="gallery" id="gallery"></div>
 
   <div class="footer">Forever & Always ❤️</div>
 </div>
-  <div class="love-letter-box">
+
+<!-- Love Letter -->
+<div class="love-letter-box">
   <div class="envelope" id="envelope">
     <div class="letter">
       <h3>To My Love ❤️</h3>
       <p>
-        Every moment with you feels magical.  
-        You are the reason I smile,  
-        the reason my heart feels full.  
+        Every moment with you feels magical.<br>
+        You are the reason I smile,<br>
+        the reason my heart feels full.<br>
         I choose you — today and always 💖
       </p>
     </div>
@@ -82,15 +54,13 @@
   </div>
 </div>
 
+<!-- Image Modal -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img id="modal-img">
 </div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
 
