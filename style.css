@@ -153,6 +153,33 @@ img:not([src]), img[src=""] {
   border-radius: 18px;
   box-shadow: 0 10px 25px rgba(214, 51, 108, 0.35);
 }
+/* Gallery layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 20px;
+}
+
+/* Photo container */
+.photo {
+  width: 100%;
+  height: 260px;              /* SAME HEIGHT FOR ALL */
+  overflow: hidden;
+  border-radius: 22px;
+  box-shadow: 0 12px 25px rgba(214, 51, 108, 0.35);
+}
+
+/* Image */
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          /* 🔑 makes all images same size */
+  border-radius: 22px;
+  display: block;
+}
+
+
 
 
 
