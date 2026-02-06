@@ -10,32 +10,29 @@ function login() {
 }
 
 /* Load gallery ONLY if gallery exists (home.html) */
+/* Auto-load gallery images */
 const gallery = document.getElementById("gallery");
+const totalImages = 50;
 
 if (gallery) {
-  const totalImages = 50; // increase if you add more photos
-
   for (let i = 1; i <= totalImages; i++) {
     const img = document.createElement("img");
     img.src = `photos/pic${i}.jpeg`;
     img.onerror = () => img.remove();
 
-    const caption = document.createElement("p");
-    caption.innerText = `Memory ${i} ❤️`;
-    caption.classList.add("caption");
-
     const wrapper = document.createElement("div");
-    wrapper.classList.add("photo");
+    wrapper.className = "photo";
     wrapper.appendChild(img);
-    wrapper.appendChild(caption);
 
     gallery.appendChild(wrapper);
   }
 }
+
+/* Image modal */
 const modal = document.getElementById("modal");
 const modalImg = document.getElementById("modal-img");
 
-gallery.addEventListener("click", e => {
+gallery?.addEventListener("click", e => {
   if (e.target.tagName === "IMG") {
     modal.style.display = "block";
     modalImg.src = e.target.src;
@@ -45,6 +42,8 @@ gallery.addEventListener("click", e => {
 document.querySelector(".close").onclick = () => {
   modal.style.display = "none";
 };
+
+/* Love letter */
 function openLetter() {
   document.getElementById("envelope").classList.add("open");
 }
@@ -52,6 +51,8 @@ function openLetter() {
 function closeLetter() {
   document.getElementById("envelope").classList.remove("open");
 }
+
+
 
 
 
