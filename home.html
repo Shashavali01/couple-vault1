@@ -2,25 +2,34 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Login ❤️</title>
+  <title>Welcome ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="login-body">
 
-<div class="card">
-  <div class="hearts"></div>
+<!-- Floating hearts background -->
+<div class="login-hearts"></div>
 
-  <h1>💖 Welcome</h1>
-  <p class="subtitle">A little place made with love</p>
+<div class="login-card">
+  <h1>💖 Our Love Vault</h1>
+  <p class="login-subtitle">Only for someone special</p>
 
-  <input id="u" type="text" placeholder="Your Name">
-  <input id="p" type="password" placeholder="Secret Password">
+  <div class="input-group">
+    <input id="u" type="text" required>
+    <label>Your Name</label>
+  </div>
 
-  <button onclick="login()">Enter 💌</button>
+  <div class="input-group">
+    <input id="p" type="password" required>
+    <label>Secret Password</label>
+  </div>
 
-  <div class="footer">Made with ❤️</div>
+  <button class="login-btn" onclick="login()">Enter 💌</button>
+
+  <p class="login-footer">Made with endless love ❤️</p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
+
