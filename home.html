@@ -2,34 +2,53 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome ❤️</title>
+  <title>Our Memories ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="login-body">
+<body>
 
-<!-- Floating hearts background -->
-<div class="login-hearts"></div>
+<!-- Background love sentences -->
+<div class="love-bg">
+  <span>Forever with you ❤️</span>
+  <span>You are my everything 💕</span>
+  <span>Love grows every day 💖</span>
+  <span>Always & Forever 💘</span>
+  <span>You + Me = ❤️</span>
+  <span>My heart is yours 💗</span>
+</div>
 
-<div class="login-card">
-  <h1>💖 Our Love Vault</h1>
-  <p class="login-subtitle">Only for someone special</p>
+<div class="card">
+  <div class="hearts"></div>
 
-  <div class="input-group">
-    <input id="u" type="text" required>
-    <label>Your Name</label>
+  <h2>💑 Our Memories</h2>
+  <p class="subtitle">Every moment with you is special</p>
+
+  <!-- Gallery (AUTO loads images) -->
+  <div class="gallery" id="gallery"></div>
+
+  <div class="footer">Forever & Always ❤️</div>
+</div>
+
+<!-- Love Letter -->
+<div class="love-letter-box">
+  <div class="envelope" id="envelope">
+    <div class="letter">
+      <h3>To My Love ❤️</h3>
+      <p>
+        Every moment with you feels magical.<br>
+        You are the reason I smile,<br>
+        the reason my heart feels full.<br>
+        I choose you — today and always 💖
+      </p>
+    </div>
   </div>
 
-  <div class="input-group">
-    <input id="p" type="password" required>
-    <label>Secret Password</label>
+  <div class="letter-buttons">
+    <button onclick="openLetter()">Open 💌</button>
+    <button onclick="closeLetter()">Close ❌</button>
   </div>
-
-  <button class="login-btn" onclick="login()">Enter 💌</button>
-
-  <p class="login-footer">Made with endless love ❤️</p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
