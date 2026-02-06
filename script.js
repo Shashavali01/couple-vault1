@@ -45,5 +45,14 @@ gallery.addEventListener("click", e => {
 document.querySelector(".close").onclick = () => {
   modal.style.display = "none";
 };
+function openLetter() {
+  document.getElementById("envelope").classList.add("open");
+}
+
+function closeLetter() {
+  document.getElementById("envelope").classList.remove("open");
+}
+
+
 
 
