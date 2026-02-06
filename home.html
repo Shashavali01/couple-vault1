@@ -2,65 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Our Memories ❤️</title>
+  <title>Login ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- Background Love Sentences -->
-<div class="love-bg">
-  <span>Forever with you ❤️</span>
-  <span>You are my everything 💕</span>
-  <span>Love grows every day 💖</span>
-  <span>Always & Forever 💘</span>
-  <span>You + Me = ❤️</span>
-  <span>My heart is yours 💗</span>
-</div>
-
-<!-- Background Music -->
-<audio autoplay loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
-
 <div class="card">
   <div class="hearts"></div>
 
-  <h2>💑 Our Memories</h2>
-  <p class="subtitle">Every moment with you is special</p>
+  <h1>💖 Welcome</h1>
+  <p class="subtitle">A little place made with love</p>
 
-  <!-- Gallery -->
-  <div class="gallery" id="gallery"></div>
+  <input id="u" type="text" placeholder="Your Name">
+  <input id="p" type="password" placeholder="Secret Password">
 
-  <div class="footer">Forever & Always ❤️</div>
-</div>
+  <button onclick="login()">Enter 💌</button>
 
-<!-- Love Letter -->
-<div class="love-letter-box">
-  <div class="envelope" id="envelope">
-    <div class="letter">
-      <h3>To My Love ❤️</h3>
-      <p>
-        Every moment with you feels magical.<br>
-        You are the reason I smile,<br>
-        the reason my heart feels full.<br>
-        I choose you — today and always 💖
-      </p>
-    </div>
-  </div>
-
-  <div class="letter-buttons">
-    <button onclick="openLetter()">Open 💌</button>
-    <button onclick="closeLetter()">Close ❌</button>
-  </div>
-</div>
-
-<!-- Image Modal -->
-<div id="modal" class="modal">
-  <span class="close">&times;</span>
-  <img id="modal-img">
+  <div class="footer">Made with ❤️</div>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
