@@ -146,5 +146,14 @@ button {
 img:not([src]), img[src=""] {
   display: none;
 }
+.photo img {
+  width: 100%;
+  height: auto;        /* ← KEY FIX */
+  object-fit: contain;/* ← FIX rotation & crop */
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(214, 51, 108, 0.35);
+}
+
+
 
 
