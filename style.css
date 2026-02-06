@@ -143,3 +143,8 @@ button {
 .envelope.open .letter {
   bottom: 0;
 }
+img:not([src]), img[src=""] {
+  display: none;
+}
+
+
