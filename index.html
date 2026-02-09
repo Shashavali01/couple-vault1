@@ -2,35 +2,38 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Our Love ❤️</title>
+  <title>New Love ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="love-login-body">
 
-<!-- Soft love background text -->
-<div class="love-bg">
-  <span>Love begins here ❤️</span>
-  <span>You are my forever 💕</span>
-  <span>With you, always 💖</span>
-</div>
+<div class="love-login-card">
 
-<div class="login-card">
-  <div class="heart-circle">💖</div>
+  <div class="top-heart">💖</div>
 
-  <h1>Welcome My Love</h1>
-  <p class="subtitle">Enter our little world</p>
+  <h1 class="love-title">New Love</h1>
+  <p class="love-subtitle">Begin your romance</p>
 
-  <input id="u" type="text" placeholder="Your Name"><br><br>
-  <input id="p" type="password" placeholder="Secret Password"><br><br>
+  <div class="input-box">
+    <span>👤</span>
+    <input id="u" type="text" placeholder="Your Name">
+  </div>
 
-  <button onclick="login()">Enter 💌</button>
+  <div class="input-box">
+    <span>❤️</span>
+    <input type="text" placeholder="Your Valentine">
+  </div>
 
-  <p class="hint">Only for us ❤️</p>
+  <div class="input-box">
+    <span>🔒</span>
+    <input id="p" type="password" placeholder="Love Password">
+  </div>
+
+  <button class="love-btn" onclick="login()">Fall in Love 💕</button>
+
+  <p class="love-footer">Already in love? <span>Forever bonded</span></p>
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
