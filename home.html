@@ -87,5 +87,14 @@
 </div>
 
 <script src="script.js"></script>
+  <script>
+  const name = localStorage.getItem("loveName");
+  if (name) {
+    document.getElementById("welcomeText").innerHTML =
+      `💖 Welcome, ${name}!`;
+  }
+</script>
+
 </body>
 </html>
+
